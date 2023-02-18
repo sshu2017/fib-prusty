@@ -22,6 +22,12 @@ setup(
             ],
         python_requires=">=3",
         tests_requires=["pytest"],
+        entry_points={
+            'console_scripts': [
+                'fib-number = \
+                    fib_prusty.cmd.fib_numb:fib_numb',
+            ],
+        },
         )
 
 
