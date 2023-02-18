@@ -16,9 +16,9 @@ setup(
         install_requires=[],
         packages=find_packages(exclude=("tests",)),
         classifiers=[
-            "Development Status::4-Beta",
-            "Programming Language::Python::3",
-            "Operating System::OS Independent",
+            "Development Status :: 4 - Beta",
+            "Programming Language :: Python :: 3",
+            "Operating System :: OS Independent",
             ],
         python_requires=">=3",
         tests_requires=["pytest"],
