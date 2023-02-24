@@ -1,12 +1,17 @@
 from setuptools import find_packages, setup
+import pathlib
+
 
 with open("README.md", "r") as fh:
     long_description = fh.read()
 
 
+with open(str(pathlib.Path(__file__).parent.absolute()) + "fib-prusty/version.py", 'r') as fh:
+    version = fh.read().split("=")[1].replace("'", "")
+
 setup(
         name='fib-prusty',
-        version="0.0.1",
+        version=version,
         author="sshu2017",
         author_email="sshu2017@yahoo.com",
         description="Calculates a Fibonacci number",
