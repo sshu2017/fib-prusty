@@ -11,7 +11,7 @@ def get_latest_version_number() -> str:
 
 def unpack_version_number(version_string: str) -> Tuple[int, int, int]:
     version_buffer: List[str] = version_string.split(".")
-    return int(version_buffer[0], int(version_buffer[1]), int(version_buffer[2]))
+    return int(version_buffer[0]), int(version_buffer[1]), int(version_buffer[2])
 
 
 def increase_version_number(version_buffer: Union[Tuple[int, int, int], List[int]]) -> List[int]:
